@@ -1,21 +1,13 @@
-# cdQDW2Uk
+# Personal Dashboard
+A Google Chrome extension showing time, current location weather, crypto status and a random background picture.
 
-Quick start:
+## How to install
+- download and unpack it on your local storage
+- in Chrome, go to ```chrome://extensions```
+- in the top right corner, enable Developeer mode
+- click on Load unpacked in the top left menu
+- The extension shows up every time a new blank tab is opened
 
-```
-$ npm install
-$ npm start
-````
+## Screenshot
+![image](https://user-images.githubusercontent.com/57393100/210609332-171d33d6-da0b-4de2-93a8-1a6a2bd40c0a.png)
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
-
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
