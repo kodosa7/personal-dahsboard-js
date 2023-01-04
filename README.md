@@ -1,5 +1,6 @@
 # Personal Dashboard
 A Google Chrome extension showing time, current location weather, crypto status and a random background picture.
+Made as an excercise to master Promises in JavaScript.
 
 ## How to install
 - download and unpack it on your local storage
