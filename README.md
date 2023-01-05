@@ -1,5 +1,6 @@
 # Personal Dashboard
 An extension for Chrome showing image, time, crypto status, location and temperature.
+Made as Scrimba.com course exercise to practice API handling.
 
 ## Install
 - Register at unsplash.com, get an API key and use it in the ```index.js``` file at line 7 or so like this:
