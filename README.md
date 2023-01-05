@@ -10,3 +10,5 @@ Made as Scrimba.com course exercise to practice API handling.
 - In the menu that appears, click on Load unpacked and select the project directory
 - Open your new tab
 
+![image](https://user-images.githubusercontent.com/57393100/210859497-b527e35c-de4d-417c-bb25-3c975a6f9a35.png)
+
