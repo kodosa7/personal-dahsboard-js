@@ -1,15 +1,19 @@
 // weather chrome extension from scrimba.com
 // fetch background image
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
+
+// Scrimba API override
+// fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
+
+fetch("https://api.unsplash.com/photos/random?client_id=UJmTZxPsbMSPA3XgJSYQ96PdQxZMciQrBAm6L6vrYKM&orientation=landscape&query=nature")
     .then(res => res.json())
     .then(data => {
         document.body.style.backgroundImage = `url(${data.urls.regular})`
 		document.getElementById("author").textContent = `By: ${data.user.name}`
     })
     .catch(err => {
-        // Use a default background image/author
+        // Use a default background image/author if something went wrong
         document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1560008511-11c63416e52d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDIxMTc&ixlib=rb-1.2.1&q=80&w=1080)`
-		document.getElementById("author").textContent = `By: Dodi Achmad`
+		document.getElementById("author").textContent = `By: John Doe`
     })
 
 // fetch dogecoin data
@@ -26,9 +30,9 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
             <span>${data.name}</span>
         `
         document.getElementById("crypto").innerHTML += `
-            <p>🎯: $${data.market_data.current_price.usd}</p>
-            <p>👆: $${data.market_data.high_24h.usd}</p>
-            <p>👇: $${data.market_data.low_24h.usd}</p>
+            <p>🎯: CZK ${data.market_data.current_price.czk}</p>
+            <p>👆: CZK ${data.market_data.high_24h.czk}</p>
+            <p>👇: CZK ${data.market_data.low_24h.czk}</p>
         `
     })
     .catch(err => console.error(err))
@@ -36,7 +40,7 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
 // get current time
 function getCurrentTime() {
     const date = new Date()
-    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
+    document.getElementById("time").textContent = date.toLocaleTimeString("cs-cz", {timeStyle: "short"})
 }
 
 // display crrent time every 1 second
