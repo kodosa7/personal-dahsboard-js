@@ -30,7 +30,7 @@ div.top {
 h1.time {
     text-align: center;
     font-size: 10rem;
-    margin-bottom: 22.5%;
+    margin-bottom: 14%;
 }
 
 div#crypto {
@@ -85,12 +85,12 @@ p.weather-temp {
     margin-top: -3em;
 }
 
-#google-calendar, #google-keep {
+#google-calendar, #google-keep, #mapy-cz {
     margin: .5em 0 .5em .5em;
     transition: 150ms;
 }
 
-#google-calendar:hover, #google-keep:hover {
+#google-calendar:hover, #google-keep:hover, #mapy-cz:hover {
     opacity: 75%;
 }
 
